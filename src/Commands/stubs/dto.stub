@@ -1,0 +1,13 @@
+<?php
+
+namespace DummyNamespace;
+
+use Spatie\DataTransferObject\DataTransferObject;
+use Illuminate\Http\Request;
+
+final class DummyClass extends DataTransferObject
+{
+    public static function fromRequest(Request $request): self {
+        return new self([]);
+    }
+}
