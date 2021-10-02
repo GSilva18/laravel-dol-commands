@@ -22,3 +22,6 @@ Generate a new Controller using the `dol:controller` command:
 ```bash
 php artisan dol:controller UserController -d User -a Api (application dentro de exp: src/App/Api)
 ```
+
+Publish config
+artisan vendor:publish --tag="dol-commands-config"
