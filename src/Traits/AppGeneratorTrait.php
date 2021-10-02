@@ -58,9 +58,9 @@ trait AppGeneratorTrait
      */
     protected function getOptions()
     {
-        return [
-            ['domain', 'd', InputOption::VALUE_REQUIRED, 'Set the domain name'],
-            ['app', 'a', InputOption::VALUE_REQUIRED, 'Set the app name'],
-        ];
-    }
+        return array_merge(parent::getOptions(), [
+            ['domain', 'd', InputOption::VALUE_OPTIONAL, 'Set the domain name'],
+            ['app', 'a', InputOption::VALUE_OPTIONAL, 'Set the app name'],
+        ]);
+    }   
 }
