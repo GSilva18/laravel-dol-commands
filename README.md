@@ -24,4 +24,6 @@ php artisan dol:controller UserController -d User -a Api (application dentro de 
 ```
 
 Publish config
-artisan vendor:publish --tag="dol-commands-config"
+```bash
+php artisan vendor:publish --tag="dol-commands-config"
+```
